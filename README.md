@@ -16,5 +16,5 @@
 2. Add conda channels
 3. Clone bergmanlab/mcclintock git repository
 4. cd into the repo and run the environment install and pipeline installer
-5. Run the test dataset through the pipeline using bash/terminal
-6. Find the output directory and use a program to make a box plot of the results in the directory.
+5. Run the test dataset through the pipeline using bash/terminal (this will download all sequences and run all the programs automatically when using the provided command in mcclintock github)
+6. Find the output directory and use a program (TBD) to make a box plot of the results produced by the pipeline
