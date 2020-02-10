@@ -4,7 +4,7 @@
   
 # Introduction  
   
-- Using the [mcclintock pipeline](https://github.com/bergmanlab/mcclintock) I am going to recreate [Figure 5](https://www.g3journal.org/content/ggg/7/8/2763/F5.large.jpg?width=800&height=600&carousel=1) from the [paper](https://www.g3journal.org/content/7/8/2763) that's used to help setup and test the pipeline. This pipeline finds transposable element insertions/deletions in reference and non-reference whole-genome shotgun sequences.
+- Using the [mcclintock pipeline](https://github.com/bergmanlab/mcclintock) I am going to recreate [Figure 5](https://www.g3journal.org/content/ggg/7/8/2763/F5.large.jpg?width=800&height=600&carousel=1) from the [paper](https://www.g3journal.org/content/7/8/2763) that's used to help setup and test the pipeline with real world data from S. cerevisiae. The genomes are to be downloaded from the [Strope et al](https://genome.cshlp.org/content/25/5/762?ijkey=704a2c3eaf47b3364b45fabb99243292adddcd05&keytype2=tf_ipsecsha) paper. This pipeline finds transposable element insertions/deletions in reference and non-reference whole-genome shotgun sequences.
  
 # Figure  
   
