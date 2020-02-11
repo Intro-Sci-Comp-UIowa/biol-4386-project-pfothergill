@@ -20,9 +20,9 @@
 2. Setup McClintock Pipeline
 	- Clone McClintock GitHub 
 		- Using SSH: 
-			- ```git clone git@github.com:bergmanlab/mcclintock.git```
+			- $ ```git clone git@github.com:bergmanlab/mcclintock.git```
 		- Using HTTPS:
-			- ```git clone https://github.com/bergmanlab/mcclintock.git```
+			- $ ```git clone https://github.com/bergmanlab/mcclintock.git```
 	- Follow the third and fourth installation instruction (3 & 4) on GitHub README
 		- Install Conda dependencies by running provided env_installer.sh script
 		- Install the pipeline using the provided install.sh script
