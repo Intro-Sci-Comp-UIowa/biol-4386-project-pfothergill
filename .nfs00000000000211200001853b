@@ -1,0 +1,60 @@
+Script started on Fri 14 Feb 2020 01:09:32 PM CST
+Agent pid 27926
+Identity added: /Users/pfothergill/.ssh/id_rsa (/Users/pfothergill/.ssh/id_rsa)
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill]1;..8-pfothergill[0m[27m[24m[J(base) [01;32m➜  [36mbiol-6298-pfothergill[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls --color=tty]1;ls[0m[38;5;27manalysis[0m  [38;5;27mdata[0m  [38;5;27moutput[0m  README.md  [38;5;27mscript[0m  typescript
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill]1;..8-pfothergill[0m[27m[24m[J(base) [01;32m➜  [36mbiol-6298-pfothergill[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=rrm typescript[1m [0m[0m [?1l>
+]2;rm -f typescript]1;rm[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill]1;..8-pfothergill[0m[27m[24m[J(base) [01;32m➜  [36mbiol-6298-pfothergill[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ccd script[1m/[0m[0m [?1l>
+]2;cd script]1;cd[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill/script]1;..ergill/script[0m[27m[24m[J(base) [01;32m➜  [36mscript[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls --color=tty]1;ls[0m[38;5;27mmcclintock_analysis_code[0m  README.md
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill/script]1;..ergill/script[0m[27m[24m[J(base) [01;32m➜  [36mscript[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ccd ..[?1l>
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill]1;..8-pfothergill[0m[27m[24m[J(base) [01;32m➜  [36mbiol-6298-pfothergill[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls --color=tty]1;ls[0m[38;5;27manalysis[0m  [38;5;27mdata[0m  [38;5;27moutput[0m  README.md  [38;5;27mscript[0m
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill]1;..8-pfothergill[0m[27m[24m[J(base) [01;32m➜  [36mbiol-6298-pfothergill[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ccd script[1m/[0m[0m [?1l>
+]2;cd script]1;cd[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill/script]1;..ergill/script[0m[27m[24m[J(base) [01;32m➜  [36mscript[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls --color=tty]1;ls[0m[38;5;27mmcclintock_analysis_code[0m  README.md
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill/script]1;..ergill/script[0m[27m[24m[J(base) [01;32m➜  [36mscript[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=mmcclintock_analysis_code[1m/[0m[0m [?1l>
+]2;mcclintock_analysis_code]1;mcclintock_analysis_code[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill/script/mcclintock_analysis_code]1;..analysis_codel[0m[27m[24m[J(base) [01;32m➜  [36mmcclintock_analysis_code[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls --color=tty]1;ls[0m[38;5;27mmccusker[0m  run_it.job  [38;5;27msacCer2_reference_simulations[0m  [38;5;27msacCer2_synthetic_insertion_simulations[0m  [38;5;27mseqplots-master[0m
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill/script/mcclintock_analysis_code]1;..analysis_code[0m[27m[24m[J(base) [01;32m➜  [36mmcclintock_analysis_code[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ccdproject[1m [0m[0m [?1l>
+]2;cd /Users/pfothergill/GitHub_Projects/biol-6298-pfothergill/]1;cdproject[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill]1;..8-pfothergill[0m[27m[24m[J(base) [01;32m➜  [36mbiol-6298-pfothergill[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls --color=tty]1;ls[0m[38;5;27manalysis[0m  [38;5;27mdata[0m  [38;5;27moutput[0m  README.md  [38;5;27mscript[0m
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;pfothergill@argon-login-2: ~/GitHub_Projects/biol-6298-pfothergill]1;..8-pfothergill[0m[27m[24m[J(base) [01;32m➜  [36mbiol-6298-pfothergill[00m [01;34mgit:([31mmaster[34m) [33m✗[00m [K[?1h=ccdp
+[J[0mcdparanoia  [Jcdpath      [JCDPATH      [Jcdproject [J[A[0m[27m[24m[47Ccdp[Karanoia
+[J[7mcdparanoia[0m  [Jcdpath      [JCDPATH      [Jcdproject [J[A[0m[27m[24m[47Ccdparanoia[K
+[7mcdparanoia[0m  [7mcdparanoia[0m  [A[0m[27m[24m[47Ccdparanoia[K
+[J[A[57C[1m [0m[0m [?1l>
+[J]2;cdparanoia]1;cdparanoiacdparanoia III release 10.2 (September 11, 2008)
+
+(C) 2008 Monty <monty@xiph.org> and Xiph.Org
+
+Report bugs to paranoia@xiph.org
+http://www.xiph.org/paranoia/
+USAGE:
+  cdparanoia [options] <span> [outfile]
+
+OPTIONS:
+  -A --analyze-drive              : run and log a complete analysis of drive
+                                    caching, timing and reading behavior;
+                                    verifies that cdparanoia is correctly
+                                    modelling a sprcific drive's cache and
+                                    read behavior. Implies -vQL
+
+  -v --verbose                    : extra verbose operation
+  -q --quiet                      : quiet operation
+  -e --stderr-progress            : force output of progress information to
+                                    stderr (for wrapper scripts)
+  -l --log-summary [<file>]       : save result summary to file, default
+                                    filename cdparanoia.log
+  -L --log-debug   [<file>]       : save detailed device autosense and
+                                    debugging output to file, default
+                                    filename cdparanoia.log
+  -V --version                    : print version info and quit
+  -Q --query                      : autosense drive, query disc and quit
+  -B --batch                      : 'batch' mode (saves each track to a
+                                    seperate file.
+  -s --search-for-drive           : do an exhaustive search for drive
+  -h --help                       : print help
+
+  -p --output-raw                 : output raw 16 bit PCM in host byte 
+                            
