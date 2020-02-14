@@ -1,8 +1,0 @@
-#!/bin/sh
-
-#$ -N mccusker_orig
-#$ -m beas
-#$ -M paul-fothergill@uiowa.edu
-#$ -q UI-HM
-
-sh /Users/pfothergill/GitHub_Projects/biol-6298-pfothergill/script/mcclintock_analysis_code/mccusker/run_mccusker.sh
