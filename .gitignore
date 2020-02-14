@@ -1,2 +1,5 @@
 # Ignore job files
 *.job
+
+# Ignore hidden shell files
+.*.sh
