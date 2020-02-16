@@ -29,7 +29,7 @@ if [ -d $output_dir/$sample_name/ ]; then
 		
 		# Lauch the McClintock Pipeline for the sample that was just downloaded
 		echo "About to launch mcclintock for $sample_name"
-		$run_dir/mcclintock/mcclintock.sh -o $output_dir -r $data_dir/sacCer2.fasta -c $run_dir/mcclintock/test/sac_cer_TE_seqs.fasta -g $data_dir/reference_TE_locations.gff -t $run_dir/mcclintock/test/sac_cer_te_families.tsv -1 $data_dir/$sample_name"_1.fastq" -2 $data_dir/$sample_name"_2.fastq" -i -p 4
+		bash $run_dir/mcclintock/mcclintock.sh -o $output_dir -r $data_dir/sacCer2.fasta -c $run_dir/mcclintock/test/sac_cer_TE_seqs.fasta -g $data_dir/reference_TE_locations.gff -t $run_dir/mcclintock/test/sac_cer_te_families.tsv -1 $data_dir/$sample_name"_1.fastq" -2 $data_dir/$sample_name"_2.fastq" -i -p 4
 	
 		# Remove the fastq files when analysis is complete. rm $data_dir/$sample_name"_1.fastq" 
 		# $data_dir/$sample_name"_2.fastq"
@@ -44,7 +44,7 @@ else
 	gunzip $data_dir/$sample_name"_2.fastq.gz"
 		
 	echo "About to launch mcclintock for $sample_name"
-	$run_dir/mcclintock/mcclintock.sh -o $output_dir -r $data_dir/sacCer2.fasta -c $run_dir/mcclintock/test/sac_cer_TE_seqs.fasta -g $data_dir/reference_TE_locations.gff -t $run_dir/mcclintock/test/sac_cer_te_families.tsv -1 $data_dir/$sample_name"_1.fastq" -2 $data_dir/$sample_name"_2.fastq" -i -p 4
+	bash $run_dir/mcclintock/mcclintock.sh -o $output_dir -r $data_dir/sacCer2.fasta -c $run_dir/mcclintock/test/sac_cer_TE_seqs.fasta -g $data_dir/reference_TE_locations.gff -t $run_dir/mcclintock/test/sac_cer_te_families.tsv -1 $data_dir/$sample_name"_1.fastq" -2 $data_dir/$sample_name"_2.fastq" -i -p 4
 	
 	# Remove the fastq files when analysis is complete. rm $data_dir/$sample_name"_1.fastq" 
 	# $data_dir/$sample_name"_2.fastq"

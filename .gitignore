@@ -5,3 +5,5 @@ data
 
 # Ignore hidden shell files (these are files that were included when cloning or wget'ing directories and I have deemed them useless)
 .*.sh
+*.fastq
+*.fastq.gz

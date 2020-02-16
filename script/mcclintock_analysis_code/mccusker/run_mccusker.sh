@@ -31,6 +31,7 @@ do
 done
 
 # Run the pipeline
+echo 'making sample_1_urls.txt' >> $output_dir/test_doc.txt
 awk -F'[\t;]' '{print $15}' $data_dir/sample_list > $data_dir/sample_1_urls.txt
 #head -5 $data_dir/sample_1_urls.txt > $data_dir/tmp mv $data_dir/tmp $data_dir/sample_1_urls.txt
 
@@ -39,10 +40,12 @@ sample_no=1
 while read line
 do
 	if [ $sample_no -eq 1 ]; then
-		qsub -l cores=4 -l long -V -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" launchmcclintock.sh $line $output_dir $run_dir
+		echo 'Made it to launch McClintock 1' >> $output_dir/test_doc.txt
+		sh /Users/pfothergill/GitHub_Projects/biol-6298-pfothergill/script/mcclintock_analysis_code/mccusker/run_mccusker.sh $line $output_dir $run_dir -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e"
 		echo -e "$line\tmcclintock$sample_no" > $data_dir/job_key
 	else
-		qsub -l cores=4 -l long -V -cwd -N mcclintock_mccusker_$sample_no -hold_jid mcclintock_mccusker_"1" -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" launchmcclintock.sh $line $output_dir $run_dir
+		echo 'Made it to launch McD 2!!!' >> $output_dir/test_doc.txt
+                sh /Users/pfothergill/GitHub_Projects/biol-6298-pfothergill/script/mcclintock_analysis_code/mccusker/run_mccusker.sh $line $output_dir $run_dir -o $ou$
 		echo -e "$line\tmcclintock$sample_no" >> $data_dir/job_key
 	fi
 	sample_no=$((sample_no+1))

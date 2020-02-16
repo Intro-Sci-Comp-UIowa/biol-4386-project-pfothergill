@@ -1,6 +1,6 @@
 # Reference(s)
   
-- Nelson, M. G., R. S. Linheiro, and C. M. Bergman, 2017  McClintock: An Integrated Pipeline for Detecting Transposable Element Insertions in Whole-Genome Shotgun Sequencing Data. G3 (Bethesda) 7: 2763-2778
+- **Nelson, M. G., R. S. Linheiro, and C. M. Bergman, 2017  McClintock: An Integrated Pipeline for Detecting Transposable Element Insertions in Whole-Genome Shotgun Sequencing Data. G3 (Bethesda) 7: 2763-2778**
 
 - Strope P. K., Skelly D. A., Kozmin S. G., Mahadevan G., Stone E. A., et al., 2015  The 100-genomes strains, an S. cerevisiae resource that illuminates its natural phenotypic and genotypic variation and emergence as an opportunistic pathogen. Genome Res. 25: 762-774.  
 
