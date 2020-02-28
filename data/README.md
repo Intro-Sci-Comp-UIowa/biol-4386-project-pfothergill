@@ -5,7 +5,8 @@
 	2. launchmcclintock.sh
 - The first one will initialize information such as the run directory, output directory, where to wget the strain fastq's, etc.
 - At the end, run_mccusker.sh will call launchmcclintock.sh which then will use the information from run_mccusker.sh to run through the mccclintock pipeline.
-- I have started the run_mccusker.sh script, however, if there isn't anything in this directory other than this README file, it means it is still running and I haven't been able to update it with all the fastq's from all of 93 strains and both of a reference genome (will be titled sacCer2.fasta) and gff locations of reference TE copies (will be titled reference_TE_locations.gff).
+- Data will be obtained only from running the pipeline is both a reference genome (will be titled sacCer2.fasta) and gff locations of reference TE copies (will be titled reference_TE_locations.gff)
+- Data that can be obtained individually: all 186 fastq files for both paired-ends of 93 strains of *S. cerevisiae*. This is done by running the obtain_fastq_files.sh script. These files will also be obtained by just running the run_mccusker.sh script mentioned above. Either way, the fastq files must be obtained before mcclintock pipeline run is started.
 - Data will be coming from:
 	1. http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=$project&result=read_run&fields=study_accession,sample_accession,secondary_sample_accession,experiment_accession,run_accession,scientific_name,instrument_model,library_layout,library_source,library_selection,read_count,base_count,experiment_title,fastq_ftp
 		- Accounts for genomes of all 93 strains
