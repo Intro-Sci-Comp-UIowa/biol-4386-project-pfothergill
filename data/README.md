@@ -14,9 +14,16 @@
 	3. http://hgdownload.soe.ucsc.edu/goldenPath/sacCer2/bigZips/chromFa.tar.gz
 		- Contains 2 files - once I untar the file, the 2 files will be concatenated together
 
-# To obtain data and run the pipeline:
+# To obtain all data and run the pipeline:
 ```
 $ cd <project root directory>/script/mcclintock_analysis_code/mccusker
 $ ./run_mccusker
 ```
 - This will work, even for HPC (as long as qsub is used for your HPC) because the last part of the run_mccusker.sh script will make qsub calls with all the newly formed data (from the first part of the script -- wget commands)
+
+# To obtain fastq files only (no pipeline run):
+```
+$ cd data
+$ ./obtain_fastq_files.sh 
+```
+
