@@ -1,3 +1,17 @@
+#!/bin/sh
+
+# Fill in the information below with your own HPC resource values and also
+# take away one of the hastags from each used value (##$ --> #$ ) then
+# submit the job on your HPC machine. If not using a cluster, keep
+# commented (##$) and run as usual (bash obtain_fastq_files.sh)!
+
+##$ -N wget_job
+##$ -m beas
+##$ -M <use your own email address here>
+##$ -q <fill in with a queue of your own>
+##$ -cwd
+##$ <project name>/<path to your project data directory>
+
 wget -nc ftp.sra.ebi.ac.uk/vol1/fastq/SRR800/SRR800764/SRR800764_1.fastq.gz
 wget -nc ftp.sra.ebi.ac.uk/vol1/fastq/SRR800/SRR800764/SRR800764_2.fastq.gz
 wget -nc ftp.sra.ebi.ac.uk/vol1/fastq/SRR800/SRR800765/SRR800765_1.fastq.gz
