@@ -1,9 +1,9 @@
 # To **analyze** the data, do the following!
 
 ### First, change into the analysis directory (you are probably here already if you are reading this!)
-
-$ ```cd analysis```
-
+```
+$ cd analysis
+```
 
 ### Go through and make a file from the output directory that contains the amount of insertions. Insertions can be counted because each programs file in every strain contains exactly 1 insertion per line of the file. So, count the lines of the file (only count "non-reference" lines) and you have the non-reference insertion total. Count all insertions for each specific file of every strain and clump them together by program type.
 ```
