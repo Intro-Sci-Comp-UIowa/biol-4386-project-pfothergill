@@ -1,0 +1,9 @@
+track name="SRR800839_ngs_te_mapper" description="SRR800839_ngs_te_mapper"
+chrI	189618	189623	TY4_non-reference_SRR800839_ngs_te_mapper_sr_1	0	+
+chrIV	1095765	1101690	TY1_reference_SRR800839_ngs_te_mapper_sr_2	0	+
+chrV	354825	354830	TY4_non-reference_SRR800839_ngs_te_mapper_sr_3	0	-
+chrVI	101353	101358	TY3_non-reference_SRR800839_ngs_te_mapper_sr_4	0	-
+chrVII	74166	74171	TY1_non-reference_SRR800839_ngs_te_mapper_sr_5	0	+
+chrVIII	91387	91757	TY4_reference_SRR800839_ngs_te_mapper_sr_6	0	+
+chrXIII	503770	504140	TY4_reference_SRR800839_ngs_te_mapper_sr_7	0	+
+chrXIV	561608	561978	TY4_reference_SRR800839_ngs_te_mapper_sr_8	0	+

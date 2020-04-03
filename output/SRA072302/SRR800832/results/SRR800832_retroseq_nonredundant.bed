@@ -1,0 +1,12 @@
+track name="SRR800832_RetroSeq" description="SRR800832_RetroSeq"
+chrII	36033	36035	TY1_non-reference_SRR800832_retroseq_rp_3	0	.
+chrIX	324797	324799	TY2_non-reference_SRR800832_retroseq_rp_9	0	.
+chrIX	324799	324801	TY3_non-reference_SRR800832_retroseq_rp_10	0	.
+chrV	449927	449929	TY2_non-reference_SRR800832_retroseq_rp_13	0	.
+chrV	567008	567010	TY5_non-reference_SRR800832_retroseq_rp_14	0	.
+chrVI	205697	205699	TY3_non-reference_SRR800832_retroseq_rp_15	0	.
+chrVII	401806	401808	TY1_non-reference_SRR800832_retroseq_rp_16	0	.
+chrVIII	389801	389803	TY3_non-reference_SRR800832_retroseq_rp_21	0	.
+chrX	722863	722865	TY2_non-reference_SRR800832_retroseq_rp_23	0	.
+chrXIV	561677	561679	TY1_non-reference_SRR800832_retroseq_rp_24	0	.
+chrXIV	561978	561980	TY1_non-reference_SRR800832_retroseq_rp_26	0	.

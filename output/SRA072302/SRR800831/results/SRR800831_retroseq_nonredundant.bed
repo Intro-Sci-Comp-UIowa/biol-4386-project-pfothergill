@@ -1,0 +1,25 @@
+track name="SRR800831_RetroSeq" description="SRR800831_RetroSeq"
+chrII	36027	36029	TY1_non-reference_SRR800831_retroseq_rp_2	0	.
+chrIII	82670	82672	TY1_non-reference_SRR800831_retroseq_rp_3	0	.
+chrIII	169172	169174	TY1_non-reference_SRR800831_retroseq_rp_9	0	.
+chrIII	169417	169419	TY3_non-reference_SRR800831_retroseq_rp_10	0	.
+chrIX	325095	325097	TY3_non-reference_SRR800831_retroseq_rp_14	0	.
+chrIX	325098	325100	TY2_non-reference_SRR800831_retroseq_rp_16	0	.
+chrV	566801	566803	TY5_non-reference_SRR800831_retroseq_rp_18	0	.
+chrVI	205520	205522	TY3_non-reference_SRR800831_retroseq_rp_19	0	.
+chrVII	110808	110810	TY2_non-reference_SRR800831_retroseq_rp_22	0	.
+chrVII	111561	111563	TY1_non-reference_SRR800831_retroseq_rp_23	0	.
+chrVII	401819	401821	TY1_non-reference_SRR800831_retroseq_rp_24	0	.
+chrVII	401889	401891	TY3_non-reference_SRR800831_retroseq_rp_25	0	.
+chrVII	402129	402131	TY1_non-reference_SRR800831_retroseq_rp_26	0	.
+chrVII	561740	561742	TY3_non-reference_SRR800831_retroseq_rp_27	0	.
+chrVII	931645	931647	TY1_non-reference_SRR800831_retroseq_rp_28	0	.
+chrX	354632	354634	TY2_non-reference_SRR800831_retroseq_rp_31	0	.
+chrX	354698	354700	TY2_non-reference_SRR800831_retroseq_rp_32	0	.
+chrX	355030	355032	TY2_non-reference_SRR800831_retroseq_rp_33	0	.
+chrX	538268	538270	TY2_non-reference_SRR800831_retroseq_rp_35	0	.
+chrX	723130	723132	TY2_non-reference_SRR800831_retroseq_rp_36	0	.
+chrXI	517051	517053	TY1_non-reference_SRR800831_retroseq_rp_38	0	.
+chrXI	517557	517559	TY1_non-reference_SRR800831_retroseq_rp_39	0	.
+chrXIII	184122	184124	TY3_non-reference_SRR800831_retroseq_rp_41	0	.
+chrXIV	561715	561717	TY2_non-reference_SRR800831_retroseq_rp_43	0	.

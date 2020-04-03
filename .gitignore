@@ -6,6 +6,9 @@
 data/helper2.sh
 data/helper.sh
 
+# Ignore currently unused directories
+output/qsub_output
+
 # Ignore hidden shell files (these are files that were included when cloning or wget'ing directories and I have deemed them useless)
 .*.sh
 *.fastq
