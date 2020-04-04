@@ -1,7 +1,7 @@
 #!/bin/bash
 
 run_dir=/Users/pfothergill/
-output_dir=/localscratch/Users/pfothergill/output_dir 
+output_dir=/localscratch/Users/pfothergill/output_tmp 
 data_dir=/localscratch/Users/pfothergill/data_tmp
 #mkdir -p $output_dir/data
 mkdir -p $output_dir/qsub_output
@@ -35,15 +35,14 @@ awk -F'[\t;]' '{print $15}' $data_dir/sample_list > $data_dir/sample_1_urls.txt
 #head -5 $data_dir/sample_1_urls.txt > $data_dir/tmp mv $data_dir/tmp $data_dir/sample_1_urls.txt
 
 sample_no=1
-current_directory=$(pwd)
 
 while read line
 do
 	if [ $sample_no -eq 1 ]; then
-		qsub -pe smp 4 -q all.q -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" bash $current_directory/launchmcclintock.sh $line $output_dir $run_dir
+		qsub -pe smp 4 -q all.q -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e"  ./launchmcclintock.sh $line $output_dir $run_dir
 		echo -e "$line\tmcclintock$sample_no" > $data_dir/job_key
 	else
-		qsub -pe smp 4 -q all.q -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" bash $current_directory/launchmcclintock.sh $line $output_dir $run_dir
+		qsub -pe smp 4 -q all.q -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" ./launchmcclintock.sh $line $output_dir $run_dir
 		echo -e "$line\tmcclintock$sample_no" >> $data_dir/job_key
 	fi
 	sample_no=$((sample_no+1))
