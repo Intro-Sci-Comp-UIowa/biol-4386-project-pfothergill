@@ -31,7 +31,6 @@ do
 done
 
 # Run the pipeline
-
 awk -F'[\t;]' '{print $15}' $data_dir/sample_list > $data_dir/sample_1_urls.txt
 #head -5 $data_dir/sample_1_urls.txt > $data_dir/tmp mv $data_dir/tmp $data_dir/sample_1_urls.txt
 
