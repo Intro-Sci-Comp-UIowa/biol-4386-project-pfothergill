@@ -38,16 +38,6 @@ $ python3 analyzer.py program_basenames.txt
 ### ***To recreate the figure***
 ```
 $ awk 'ORS=NR?" ":"\n"' program_basenames.txt | awk ' { print $1, $3, $6, $4, $2, $5  } ' > horizontal_basenames.txt
-$ paste ngs_te_mapper_sorted_freq.txt relocate_sorted_freq.txt temp_sorted_freq.txt retroseq_sorted_freq.txt popoolatio
-nte_sorted_freq.txt telocate_sorted_freq.txt > all_sorted.txt
-$ cat horizontal_basenames.txt all_sorted.txt | column -t > tabular_combined.txt
-$ awk ' { print $1, $2, $3, $4, $5, $6 } ' tabular_combined.txt | sed 's/ /,/g' > combined.txt
-```
-
-### Time to remake the boxplot (done in RStudio)
-```
-> combined <- read.csv("combined.txt")
-> boxplot(combined, log = 'y', las = 2, par(mar = c(7, 4.25, 0.20, 0.20)+ 0.1), col = c("#f2b57c", "#ef7d7c", "#b67eec", "#7f7cf1", "#7cb7f1", "#7af1ef"))
-> mtext("Number of predicted non-reference insertions per sample", 
-      side = 2, line = 3.5, cex = .9)
+$ paste ngs_te_mapper_sorted_freq.txt relocate_sorted_freq.txt temp_sorted_freq.txt retroseq_sorted_freq.txt popoolationte_sorted_freq.txt telocate_sorted_freq.txt > all_sorted.txt
+$ cat horizontal_basenames.txt all_sorted.txt | column -t > combined.txt
 ```
