@@ -39,10 +39,14 @@ sample_no=1
 while read line
 do
 	if [ $sample_no -eq 1 ]; then
-		qsub -pe smp 4 -q BIO-INSTR -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" launchmcclintock.sh $line $output_dir $run_dir
+		#qsub -pe smp 4 -q BIO-INSTR -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" launchmcclintock.sh $line $output_dir $run_dir
+
+		launchmcclintock.sh $line $output_dir $run_dir
 		echo -e "$line\tmcclintock$sample_no" > $data_dir/job_key
 	else
-		qsub -pe smp 4 -q BIO-INSTR -cwd -N mcclintock_mccusker_$sample_no -hold_jid mcclintock_mccusker_"1" -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" launchmcclintock.sh $line $output_dir $run_dir
+		#qsub -pe smp 4 -q BIO-INSTR -cwd -N mcclintock_mccusker_$sample_no -hold_jid mcclintock_mccusker_"1" -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" launchmcclintock.sh $line $output_dir $run_dir
+		
+		launchmcclintock.sh $line $output_dir $run_dir
 		echo -e "$line\tmcclintock$sample_no" >> $data_dir/job_key
 	fi
 	sample_no=$((sample_no+1))
