@@ -1,8 +1,8 @@
 #!/bin/bash
 
 run_dir=/Users/pfothergill/
-output_dir=/Users/pfothergill/output_tmp 
-data_dir=/Users/pfothergill/data_tmp
+output_dir=/localscratch/Users/pfothergill/output_dir 
+data_dir=/localscratch/Users/pfothergill/data_tmp
 #mkdir -p $output_dir/data
 mkdir -p $output_dir/qsub_output
 

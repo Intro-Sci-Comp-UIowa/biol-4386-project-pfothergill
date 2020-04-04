@@ -5,7 +5,7 @@ url=${urltmp%%_2.f*}
 sample_name=${url##*/}
 output_dir=$2
 run_dir=$3 
-data_dir=/Users/pfothergill/data_tmp
+data_dir=/localscratch/Users/pfothergill/data_tmp
 
 # If the sample folder exists this sample must have at least been launched
 if [ -d $output_dir/$sample_name/ ]; then

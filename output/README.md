@@ -1,0 +1,4 @@
+# The output directory contain data for 93 strains of saccharomyces cerevisiae (**S. cerevisiae**)
+
+
+There are 93 strains in total that are represented by 93 folders in the output/SRA072302 directory. In each folder, there are 6 files, totaling 558 files altogether. These 6 files are from the 6 programs that were ran on each strain of S. cerevisiae during the pipeline run. These files are BED files and they contain records of transposable element insertions with one insertion per line. These files contain insertions present in both reference and non-reference genomes. For figure recreation, these files will need to be combined and modified as to only contain non-reference TE insertions. As to preserve this data, that transformation is well-documented in the ../analysis/README.md (relative path from this current directory)
