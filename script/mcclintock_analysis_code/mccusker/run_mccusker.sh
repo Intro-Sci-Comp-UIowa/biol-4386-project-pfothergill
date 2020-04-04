@@ -4,7 +4,7 @@ run_dir=/Users/pfothergill/
 output_dir=/localscratch/Users/pfothergill/output_tmp 
 data_dir=/localscratch/Users/pfothergill/data_tmp
 #mkdir -p $output_dir/data
-mkdir -p $output_dir/qsub_output
+mkdir $output_dir/qsub_output
 
 # Download the reference genome from UCSC (allows easy browsing of results)
 printf "Downloading reference genome...\n\n"
@@ -27,7 +27,7 @@ projects=('SRA072302')
 for project in "${projects[@]}"
 do
 	wget -O $data_dir/$project "http://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=$project&result=read_run&fields=study_accession,sample_accession,secondary_sample_accession,experiment_accession,run_accession,scientific_name,instrument_model,library_layout,library_source,library_selection,read_count,base_count,experiment_title,fastq_ftp"
-	sed 1d $data_dir/$project >> $data_dir/sample_list
+	sed 1d $data_dir/$project > $data_dir/sample_list
 done
 
 # Run the pipeline
@@ -39,7 +39,7 @@ sample_no=1
 while read line
 do
 	if [ $sample_no -eq 1 ]; then
-		qsub -pe smp 4 -q all.q -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e"  ./launchmcclintock.sh $line $output_dir $run_dir
+		qsub -pe smp 4 -q all.q -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" ./launchmcclintock.sh $line $output_dir $run_dir
 		echo -e "$line\tmcclintock$sample_no" > $data_dir/job_key
 	else
 		qsub -pe smp 4 -q all.q -cwd -N mcclintock_mccusker_$sample_no -o $output_dir"/qsub_output/"$sample_no".o" -e $output_dir"/qsub_output/"$sample_no".e" ./launchmcclintock.sh $line $output_dir $run_dir
