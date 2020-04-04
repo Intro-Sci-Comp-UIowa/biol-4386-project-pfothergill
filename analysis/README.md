@@ -42,7 +42,7 @@ $ paste ngs_te_mapper_sorted_freq.txt relocate_sorted_freq.txt temp_sorted_freq.
 nte_sorted_freq.txt telocate_sorted_freq.txt > all_sorted.txt
 $ cat horizontal_basenames.txt all_sorted.txt | column -t > tabular_combined.txt
 $ awk ' { print $1, $2, $3, $4, $5, $6 } ' tabular_combined.txt | sed 's/ /,/g' > combined.txt
-$ rm all_sorted.txt 
+$ rm all_sorted.txt tabular_combined.txt 
 ```
 
 ### Time to remake the boxplot (done in RStudio)
