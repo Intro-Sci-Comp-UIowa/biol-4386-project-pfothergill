@@ -12,6 +12,40 @@
   
 [<img src="https://www.g3journal.org/content/ggg/7/8/2763/F5.large.jpg?width=800&height=600&carousel=1">](https://www.g3journal.org/content/ggg/7/8/2763/F5.large.jpg?width=800&height=600&carousel=1)  
 
+# How to run (Installation steps 1-4 are taken directly from the original [bergmanlab](https://github.com/bergmanlab/mcclintock) GitHub page. See that page for more details about installation, testing and each program used in the pipeline)
+
+## Installation
+
+1. Install python3 miniconda (miniconda is a lightweight installer for the conda package manager).
+```
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O $HOME//miniconda.sh
+bash ~/miniconda.sh -b -p $HOME/miniconda # silent mode
+echo "export PATH=\$PATH:\$HOME/miniconda/bin" >> $HOME/.bashrc # add to .bashrc
+source $HOME/.bashrc
+```
+
+2. Update conda and set up your conda channels (this lets conda know where to find packages)
+```
+conda update conda
+conda config --add channels defaults
+conda config --add channels conda-forge
+conda config --add channels bioconda
+```
+
+3. Install dependencies with conda by clone the McClintock repository, cd into the project directory and run the script install.sh with no arguments, the installation might take a while to finish.
+```
+git clone git@github.com:bergmanlab/mcclintock.git
+cd mcclintock
+sh env_install.sh
+```
+
+4. Install McClintock by run the script install.sh with no arguments.
+```
+sh install.sh
+```
+
+install.sh will download and unpack all of the TE detection pipelines and check that the required dependencies are available in your path. Missing dependencies will be reported and you must install or make sure these are available to run the full pipeline.
+
 # Outline of approaches
 1. Setup Conda Environment (For use of python3 tools during pipeline run)
 	- Follow the first and second installation instructions (1 & 2) on GitHub README
@@ -26,11 +60,10 @@
 	- Follow the third and fourth installation instruction (3 & 4) on GitHub README
 		- Install Conda dependencies by running provided env_installer.sh script
 		- Install the pipeline using the provided install.sh script
-3. Download all my fastq files (93 strains x 2 reads/strain)
-	- I need about 15.5 days to download all materials as each fastq file takes about 2 hours to fully download and I have 186 of them
-	- (OPTIONAL) Use a script to install all my fastq files (93 x 2) in local McClintock folder in Argon
-4. Write a script to make 93 consecutive runs, one for each strain, that outputs into a specified "output" folder
+3. (OPTIONAL) Download all fastq files (93 strains x 2 reads/strain) individually or used as a scipt
+	- This is done automatically within script/mcclintock_analysis_code/run_mccusker.sh so only do this if you want only the reads used in this study
+	- Plan accordingly, individually, they could take upwards of 2 weeks to obtain as each fastq file takes about ~2 hours to fully download and there are 186 of them
 5. Plotting
 	- (OPTIONAL) Use SeqPlots to make a boxplot of my data by running the program and telling the program the right place to find all my data
-	- If above doesn't work correctly, manually plot all 558 data points corresponding to each program ran on each stain. Tedious but possibly my only option
-		- Count lines for each BED file of each strain and map that on the boxplot for the corresponding program. Do this for all 558 BED files
+	- If above doesn't work correctly, manually plot all 558 data points corresponding to each program ran on each stain. Tedious but possibly the only option. See the analysis/ directory for more information
+		- Count lines for each BED file of each strain and map on the boxplot in R for the corresponding program. Do this for all 558 BED files
