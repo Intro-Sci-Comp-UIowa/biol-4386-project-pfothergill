@@ -1,5 +1,10 @@
 # To **analyze** the data, do the following!
 
+```
+$ ./run_analysis.sh
+```
+
+## This will do the following (you can run each command seperately if you do not want to run a script for the whole process!):
 ### First, change into the analysis directory (you are probably here already if you are reading this!)
 ```
 $ cd analysis

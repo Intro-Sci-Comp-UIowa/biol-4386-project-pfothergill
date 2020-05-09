@@ -1,6 +1,0 @@
-ngs_te_mapper
-popoolationte
-relocate
-retroseq
-telocate
-temp
