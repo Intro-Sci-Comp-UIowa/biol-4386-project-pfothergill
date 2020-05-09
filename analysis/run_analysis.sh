@@ -44,3 +44,5 @@ temp* \
 # run the R script that will make the recreated box-plot
 chmod +x make_plot.R
 R --no-save < make_plot.R
+mkdir -p ../output/recreated_image
+mv recreated_boxplot.png ../output/recreated_image
